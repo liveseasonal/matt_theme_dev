@@ -1,20 +1,16 @@
+<?php 
+
+/*
+
+Template Name: Left Sidebar 
+
+*/
+
+?>
+
+
 <?php get_header();  ?>
 
-   <section class="hero is-large">
-    <div class="hero-body">
-      <div class="container city-heading">
-        <h1 class="title hero-title">
-          Discover events around the city
-        </h1>
-        <br>
-          <input class="input input-city" type="text" placeholder="Enter a city">
-          <input class="input input-date" type="date" placeholder="Pick a date">
-          <button class="button get-started">
-            Get Started
-          </button>
-      </div>
-    </div>
-  </section>
 
   <section class="section is-medium ">
     <div class="container">
