@@ -1,0 +1,245 @@
+/*
+Theme name: matt_theme_dev
+Author:Matt
+Author URI: http://liveseasonal.com
+Description: A post modern responsive site with the touch of the funky
+Version: 1.0
+License: GNU
+License URI:
+Tags: Happy, Trying, Wordtothepress
+
+At matt_theme_dev we believe in the power of learning and being able to live a life you want to have.
+
+
+
+*/ 
+
+
+
+.border-nav {
+  border: 1px solid #d3d3d3 ;
+}
+
+.button-area {
+  /*margin-right: 30px;
+  margin-left: 120px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* max-width: 520px; */
+  /* padding-top: 40px; */
+  /* position: absolute; */
+  margin-left: 40px;
+}
+
+.button-area a {
+  background: #d3d3d3;
+  padding: 1em 2.4em;
+  font-size: .9em;
+  margin: 1em;
+  color: white;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.logo {
+  font-family: cursive;
+  width: 100px;
+}
+
+.column .search-form {
+ background-color: white;
+ text-align: center;
+ height: 25%;
+ width: 100%;
+ border: 1px solid #d3d3d3;
+}
+
+/* making the search box */
+
+.card-header-title {
+  justify-content: center;
+}
+
+.card-footer {
+  margin: auto;
+  justify-content:center;
+  padding-top: 18px;
+}
+
+.card.is-fullwidth {
+  padding:20px;
+}
+
+#searchTextField {
+  width:50%;
+  height:50px;
+}
+
+#searchDateField {
+  height:50px;
+}
+
+.container1 {
+  /* height: 50px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  border: 1px solid #d3d3d3; */
+  padding-left: 20px;
+}
+
+.city-heading {
+ margin: auto;
+ text-align: center;
+}
+
+.city-input {
+  text-align: center;
+  /* margin-left: 34%;
+  padding-top: 80px; */
+  
+
+}
+
+.hero-title {
+  color:white;
+  font-family: arial;
+}
+
+.hero-subtitle {
+  color: white;
+}
+
+.input-city {
+  width:100%px;
+  height:50px;
+}
+
+.input-date {
+  width:100%;
+  height:50px;
+}
+
+.get-started {
+  width:150px;
+  height:50px;
+  background-color: #1fc8db;
+
+}
+
+
+.space_edit {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+/* .container-map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+} */
+
+.on-the-map {
+  position: absolute;
+  top: 15; 
+} 
+
+.on-the-map button {
+  float: right;
+  padding-top:40px;
+}
+
+.event-search {
+  padding-top: 10px;
+  height: 50px;
+  width: 100%;
+}
+
+
+.input-date {
+  /* padding-left: 10px; */
+}
+
+
+/* Is the backgorund to the input and date field on the updated display page  */
+.search-and-date {
+  background-color: white;
+  padding: 0px;
+}
+
+.map-button {
+  position: relative;
+}
+
+.hero-body {
+  background-image: url("people-eiffel-tower-lights-night.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+ /*  padding-top: 240px !important;
+  padding-bottom: 220px !important; */
+}
+
+.how-it-works-headings {
+  text-align: center;
+}
+
+#how-it-works-images img {
+  /* border-radius: 55px; */
+  width: 275px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #d3d3d3;
+}
+
+#how-it-works-images p {
+  color: #222;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* By displaying none it takes away the map/satelite issue */
+.gmnoprint {
+  display: none;
+}
+
+.city-label {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.date-label {
+  text-align: center;
+}
+
+/* #on-the-map {
+  z-index: 2;
+} */
+
+/*.space_edit2 {
+  padding-left: 20px;
+}*/
+
+/*.city_location {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  padding: 0px;
+}*/
+
+.footer_theme_dev {
+  height: 300px;
+  width: 100%;
+  border: 2px solid black;
+  background-color: white;
+}
+
+
+
+
+
