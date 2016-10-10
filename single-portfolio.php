@@ -1,42 +1,58 @@
+<?php 
+
+/*
+
+Template Name: Left Sidebar 
+
+*/
+
+?>
+
+
 <?php get_header();  ?>
 
-   <!-- <section class="hero is-large">
-    <div class="hero-body">
-      <div class="container city-heading">
-        <h1 class="title hero-title">
-          Discover events around the city
-        </h1>
-        <br>
-          <input class="input input-city" type="text" placeholder="Enter a city">
-          <input class="input input-date" type="date" placeholder="Pick a date">
-          <button class="button get-started">
-            Get Started
-          </button>
-      </div>
-    </div>
-  </section> -->
+<p>I am in single-portfolio.php</p>
 
-  <p>I am page.php</p>
+
+<!-- Primary -->
 
   <section class="section is-medium ">
     <div class="container">
       <div class="heading how-it-works-headings">
-        <!-- <h1 class="title">How it works</h1> -->
+
         
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-        <h1 class="title"><?php the_title(); ?></h1>
-        <p><?php the_content(); ?> </p>
+        <?php the_field('images'); ?> 
+
+
       </div>
       <br>
       <br>
-      <!-- <div class="how-it-works-images"> -->
+      
+<!-- Secondary -->
+
         <div class="columns" id="how-it-works-images">
           <div class="column is-4 ">
 
 
-            <img src="phone_in_the_country.jpg"/>
+          <h1><?php the_title(); ?></h1>
+          <p><?php the_field('description'); ?></p>
+
+          <hr>
+
+          <p>
+            <?php previous_post_link(); ?> - 
+            <a href="<?php bloginfo('url'); ?>/portfolio">Back to portfolio</a> -
+            <?php next_post_link(); ?>
+
+          </p>
+
+
+
+
+            <!-- <img src="phone_in_the_country.jpg"/> -->
             <br>
             <p><strong>Browse Events</strong></p>
             <br>
@@ -59,11 +75,10 @@
         </div>
         
       </div>
+      <?php endwhile(); endif; ?>
     </div>
   </section>
 
-<?php endwhile; else : ?>
-  <p><?php _e( 'Sorry, no pages found.' ); ?></p>
-<?php endif; ?>
+
 
 <?php get_footer(); ?>

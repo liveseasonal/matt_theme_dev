@@ -1,5 +1,7 @@
 <?php get_header();  ?>
 
+<p> I am in index.php</p>
+
    <section class="hero is-large">
     <div class="hero-body">
       <div class="container city-heading">
@@ -20,7 +22,7 @@
     <div class="container">
       <div class="heading how-it-works-headings">
         <!-- <h1 class="title">How it works</h1> -->
-        
+
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
