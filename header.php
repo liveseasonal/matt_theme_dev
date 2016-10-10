@@ -25,14 +25,21 @@
       </a>
     </div>
 
+    <?php 
+      
+      $defaults = array(
+          'container'  => false,
+          'theme_location' => 'primary_menu',
+          'menu_class' => 'nav-menu'
+        );
 
-    <!-- <span class="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </span> -->
+      wp_nav_menu( $defaults );
 
-    <div class="nav-right nav-menu">
+    ?>
+
+<!--     The below represents Explore , blog and other unlinked a tags we had for the demo. 
+ -->
+    <!-- <div class="nav-right nav-menu">
       <a class="nav-item" href="#">
         Explore
       </a>
@@ -45,5 +52,5 @@
           <span>Contact us</span>
         </a>
       </span>
-    </div>
+    </div> -->
   </nav>

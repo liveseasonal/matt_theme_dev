@@ -1,6 +1,6 @@
 <?php get_header();  ?>
 
-   <section class="hero is-large">
+   <!-- <section class="hero is-large">
     <div class="hero-body">
       <div class="container city-heading">
         <h1 class="title hero-title">
@@ -14,7 +14,7 @@
           </button>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="section is-medium ">
     <div class="container">
