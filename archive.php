@@ -2,7 +2,7 @@
 
 /*
 
-Template Name: Home 
+Template Name: Single Blog
 
 */
 
@@ -19,17 +19,19 @@ Template Name: Home
       <div class="heading how-it-works-headings">
         <!-- <h1 class="title">How it works</h1> -->
 
+        <div class="leader">
+          <h1><?php wp_title(); ?>Blog Posts</h1>
+        </div>
+
 
         
-       
-        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
       
           <article class="post">
-
-
+            
             <h1 class="title"><a href="the_permalink(); ?>"><?php the_title(); ?></a></h1>
-            <h2><?php echo strip_tags(get_the_excerpt() ); ?></h2>
-            <!-- <ul class="post-meta no-bullet">
+            
+            <ul class="post-meta no-bullet">
               <li class="author">
                   <span class="wpt-avatar small">
                     <?php echo get_avatar( get_the_author_metal('ID'), 24); ?>
@@ -38,14 +40,20 @@ Template Name: Home
               </li>
               <li class="cat">in <?php the_category(); ?></li>
               <li class="date">in <?php the_date(); ?></li>
-            </ul>
+            </ul>  
+
             <?php if(get_the_post_thumbnail() ): ?>
             <div class="img-container">
               <?php the_post_thumbnail('large'); ?>
             </div>
-            <?php endif; ?> -->         
+            <?php endif; ?>  
+
+            <?php comments_template(); ?>
+
+            <?php the_content(); ?>
+
           </article>
-      </div>
+      </div>  
     </div>
     <br>
     <br>

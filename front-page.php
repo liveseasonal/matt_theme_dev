@@ -1,6 +1,11 @@
 <?php get_header();  ?>
 
-   <!-- <section class="hero is-large">
+<p> I am in front-page.php</p>
+<p>Test</p>
+
+
+
+   <section class="hero is-large">
     <div class="hero-body">
       <div class="container city-heading">
         <h1 class="title hero-title">
@@ -14,29 +19,23 @@
           </button>
       </div>
     </div>
-  </section> -->
-
-  <p>I am page.php</p>
+  </section>
 
   <section class="section is-medium ">
     <div class="container">
       <div class="heading how-it-works-headings">
         <!-- <h1 class="title">How it works</h1> -->
 
-        <h1 class="title"><?php the_title(); ?></h1>
-        <?php echo do_shortcode("[huge_it_slider id='2']"); ?>
-
-        
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-        <!-- <h1 class="title"><?php the_title(); ?></h1> -->
+        <h1 class="title"><?php the_title(); ?></h1>
         <p><?php the_content(); ?> </p>
       </div>
       <br>
       <br>
       <!-- <div class="how-it-works-images"> -->
-        <!-- <div class="columns" id="how-it-works-images">
+        <div class="columns" id="how-it-works-images">
           <div class="column is-4 ">
 
 
@@ -60,7 +59,7 @@
             <br>
             <p> Meet new people, try new things and enjoy all the city has to offer</p>
           </div>
-        </div> -->
+        </div>
         
       </div>
     </div>
